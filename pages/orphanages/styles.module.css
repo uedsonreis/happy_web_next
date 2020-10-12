@@ -1,0 +1,55 @@
+.pageOrphanage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.pageOrphanage aside {
+    width: 360px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+}
+
+.pageOrphanage aside h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 64px;
+    line-height: 42px;
+}
+
+.pageOrphanage aside p {
+    line-height: 28px;
+    margin-top: 24px;
+}
+
+.pageOrphanage aside footer {
+    display: flex;
+    line-height: 24px;
+    flex-direction: column;
+}
+
+.pageOrphanage aside strong {
+    font-weight: 800;
+}
+
+.pageOrphanage .createButton {
+    right: 40px;
+    width: 64px;
+    bottom: 40px;
+    height: 64px;
+    display: flex;
+    position: absolute;
+    border-radius: 20px;
+    align-items: center;
+    background: #15C3D6;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.pageOrphanage .createButton:hover {
+    background: #17D6EB;
+}
