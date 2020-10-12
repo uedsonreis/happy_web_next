@@ -11,7 +11,7 @@ interface Props {
 function OrphanageMap(props: Props) {
     const { latitude, longitude, zoom } = props
     return (
-        <Map center={[latitude, longitude]} zoom={zoom} style={{ width: '100%', height: '100%' }}>
+        <Map center={[latitude, longitude]} zoom={zoom} style={{ width: '100%', height: '100%', zIndex: 5 }}>
             <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         </Map>
     )

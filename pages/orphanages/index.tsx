@@ -1,6 +1,7 @@
-import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { FiPlus } from 'react-icons/fi'
+
+import Button from '../../components/LinkButton'
 
 import styles from './styles.module.css'
 
@@ -25,11 +26,11 @@ function OrphanagePage() {
 
             <MapWithNoSSR latitude={-12.9892352} longitude={-38.44386} zoom={15} />
 
-            <Link href="/orphanages/create">
-                <a className={styles.createButton}>
-                    <FiPlus size={32} color="#FFF" />
-                </a>
-            </Link>
+            <Button
+                url="/orphanages/create"
+                style={{ right: '40px', bottom: '40px', position: 'absolute' }}
+                icon={<FiPlus size={32} color="#FFF" />}
+            />
 
         </div>
     )

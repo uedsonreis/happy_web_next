@@ -1,0 +1,12 @@
+.backBar {
+    top: 0;
+    left: 0;
+    width: 96px;
+    display: flex;
+    height: 100vh;
+    padding: 24px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+}

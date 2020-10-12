@@ -1,0 +1,35 @@
+.createOrphanage {
+    display: flex;
+    justify-content: center;
+}
+
+.createOrphanage .title {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #4D6F80;
+}
+
+div + .title {
+    margin-top: 40px;
+}
+
+.createOrphanage aside {
+    top: 0;
+    left: 0;
+    width: 96px;
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+}
+
+.createOrphanage .card {
+    width: 75%;
+    padding: 80px;
+    min-width: 708px;
+    margin-top: 108px;
+    border-radius: 20px;
+    background-color: #fff;
+}
