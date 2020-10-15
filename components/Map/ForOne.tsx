@@ -5,11 +5,14 @@ import Map from './index'
 
 interface Props {
     style: any
-    zoom: number
     latitude: number
     longitude: number
     mapIcon: IconOptions
-
+    
+    hideMarker?: boolean
+    
+    zoom?: number
+    onClick?: Function
     dragging?: boolean
     touchZoom?: boolean
     zoomControl?: boolean
@@ -18,11 +21,13 @@ interface Props {
 }
 
 export default function OrphanageMap(props: Props) {
-    const { latitude, longitude, mapIcon, ...rest } = props
+    const { latitude, longitude, mapIcon, hideMarker, ...rest } = props
 
     return (
         <Map latitude={latitude} longitude={longitude} {...rest}>
-            <Marker interactive={false} icon={icon(mapIcon)} position={[latitude, longitude]} />
+            { !hideMarker && (
+                <Marker interactive={false} icon={icon(mapIcon)} position={[latitude, longitude]} />
+            )}
         </Map>
     )
 }

@@ -1,16 +1,19 @@
 import { FiArrowLeft } from "react-icons/fi"
-import { useRouter } from 'next/router'
+import Link from "next/link"
 
-export default function SideBar() {
-    const router = useRouter()
-    
+interface Props { info?: string }
+
+export default function SideBar(props: Props) {
     return (
         <aside className="app-sidebar">
             <img src="/marker.svg" alt="Happy" />
+            {props.info}
             <footer>
-                <button type="button" onClick={router.back}>
-                    <FiArrowLeft size={24} color="#FFF" />
-                </button>
+                <Link href="/orphanages" >
+                    <a>
+                        <FiArrowLeft size={24} color="#FFF" />
+                    </a>
+                </Link>
             </footer>
         </aside>
     )

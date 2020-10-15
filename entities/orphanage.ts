@@ -1,3 +1,5 @@
+import { Photo } from "./photo";
+
 export interface Orphanage {
 
     id: number
@@ -9,5 +11,5 @@ export interface Orphanage {
     weekend: boolean
     latitude: number
     longitude: number
-
+    photos: Photo[]
 }
